@@ -1,0 +1,293 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Tushar} \headerlastnamestyle{Kakkar}\\
+	\vspace{2mm}
+     {\faEnvelope\ kakkar.tushar1@gmail.com} |      {\faMobile\ +91{-}8800408115} |      {\faMapMarker\ Gurgaon, India} |      {\faLink\ www.linkedin.com/in/tusharkaka} \
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Work Experience}
+\begin{cventries}
+	\cventry
+	{ Manager Data Engineering  }
+	{ Publicis Sapient  }
+	{}
+	{ September 2023 -   Present }
+	{ \begin{cvitems} 		\item Working as a full{-}time Manager Data Engineering in the DATA/AI COE under Financial Services vertical
+				\item Responsibilities include Cloud Data Engineering, Data Integration \& Transformation, Data Strategy, Data Design, and Data Governance
+				\item Created a Data Ingestion platform for a commercial bank for integrating accounting and open banking data
+				\item Applied LLM on top of core LLM
+		 \end{cvitems} }
+	\cventry
+	{ Senior Associate Data Engineering L2  }
+	{ Publicis Sapient  }
+	{}
+	{ June 2021 -   August 2023 }
+	{ \begin{cvitems} 		\item Worked as a full{-}time Data Engineer in the DATA/AI COE under Financial Services vertical
+				\item Created a custom mainframe offloader for an international bank, enabling real{-}time data stream from mainframe to ODS
+				\item Speedlayer saved 60\% of MIPS on mainframe used for reading data
+		 \end{cvitems} }
+	\cventry
+	{ Senior Consultant {-} Financial Services Analytics  }
+	{ Ernst \& Young LLP  }
+	{}
+	{ May 2019 -   June 2021 }
+	{ \begin{cvitems} 		\item Worked as a full{-}time Data Architect on client site, a global name in financial services
+				\item Led a big data integration project on the technical front for a client in the financial domain
+				\item Made EY products offering more appealing to prospective and existing clients
+				\item Ingested 2 Realtime Data SORs and 2 Batch Data SORs into the Data Lake
+				\item Created 3 ODLs on the Data Lake on the Ingested SOR data
+		 \end{cvitems} }
+	\cventry
+	{ Assistant Manager {-} Data Science  }
+	{ WNS Global Services  }
+	{}
+	{ April 2016 -   May 2019 }
+	{ \begin{cvitems} 		\item Worked on Big Data Engineering, DevOps, and led the capability creation team on the technical end
+				\item Made WNS products offering more appealing to prospective clients
+				\item Won Silver Globe Award for automating and optimizing multiple data pipelines and batch jobs, saving 23\% computing time and 67\% manual effort by implementing CI/CD tools (Git, Jira, Jenkins)
+				\item Saved 40\% project execution time by automating product deployment using Jenkins on AKS cluster
+				\item Trained sentiment analysis model with 95\% accuracy on Twitter data using TensorFlow (Deep Learning)
+		 \end{cvitems} }
+	\cventry
+	{ Lead Associate {-} Data Science  }
+	{ WNS Global Services  }
+	{}
+	{ April 2015 -   April 2016 }
+	{ \begin{cvitems} 		\item Led the in{-}house startup of WNS, named SocioSEER, on the technical front
+				\item Won COO Out{-}performance Award for adding Big Data Capability
+				\item Slashed customer email response time by 67\% by creating an automated email classification platform
+		 \end{cvitems} }
+	\cventry
+	{ Sr. Associate {-} Data Science  }
+	{ WNS Global Services  }
+	{}
+	{ August 2013 -   April 2015 }
+	{ \begin{cvitems} 		\item Assisted team on various new POCs and pilot projects
+				\item Worked on Big Data Analytics, NoSQL databases, text mining, machine learning, and cloud computing
+				\item Won Wincubate II {-} CEO Entrepreneurship Challenge for B{-}Plan SocioSEER
+				\item Developed ads recommendation model that increased ad revenue of the client by 18\%
+		 \end{cvitems} }
+	\cventry
+	{ Intern {-} Data Science  }
+	{ WNS Global Services  }
+	{}
+	{ June 2013 -   July 2013 }
+	{ \begin{cvitems} 		\item Introduced Text Mining capabilities in WNS R labs
+		 \end{cvitems} }
+	\cventry
+	{ Research Intern  }
+	{ Geschickten Biosciences (now InterpretOmics)  }
+	{}
+	{ May 2012 -   June 2012 }
+	{ \begin{cvitems} 		\item Worked on HG19 human genome model{-}based genetic disease diagnosis using Big Data Analytics
+		 \end{cvitems} }
+\end{cventries}
+
+
+%==== Projects ====%
+\cvsection{Projects}
+\begin{cventries}
+    	\cventry
+	{ Developed Data Ingestion platform for commercial bank, integrating accounting and open banking data }
+	{ Data Ingestion Platform – Lloyds BCB CDA }
+	{        {Cloud Data Engineering, Data Integration, Data Transformation } 
+    }
+	{}
+	{}
+	
+	\vspace{-5mm}
+    	\cventry
+	{ Created custom mainframe offloader for international bank, enabling real{-}time data stream and saving 60\% MIPS on mainframe }
+	{ Speedlayer {-} Mainframe Offloading – Bangkok Bank }
+	{        {Mainframe Offloader, Real{-}time Data Stream, Cost Savings } 
+    }
+	{}
+	{}
+	
+	\vspace{-5mm}
+    	\cventry
+	{ Led big data integration project for global financial client }
+	{ Integrated Data {-} AMEX }
+	{        {Big Data Integration, Financial Services, Global Client } 
+    }
+	{}
+	{}
+	
+	\vspace{-5mm}
+    	\cventry
+	{ Developed trend discovery and competitor identification system for Coca Cola }
+	{ Trend Discovery and Competitor Identification – Coca Cola }
+	{        {Trend Discovery, Competitor Identification, Beverages } 
+    }
+	{}
+	{}
+	
+	\vspace{-5mm}
+    	\cventry
+	{ Developed SocioSEER platform for multiple domains }
+	{ SocioSEER – British Airways, Sony Music }
+	{        {SocioSEER, Multiple Domains } 
+    }
+	{}
+	{}
+	
+	\vspace{-5mm}
+    	\cventry
+	{ Developed Neural Machine Translator for 40 countries/languages }
+	{ Neural Machine Translator }
+	{        {Neural Machine Translation, Multiple Languages } 
+    }
+	{}
+	{}
+	
+	\vspace{-5mm}
+    	\cventry
+	{ Developed integrated customer support platform }
+	{ InTouch }
+	{        {Customer Support Platform } 
+    }
+	{}
+	{}
+	
+	\vspace{-5mm}
+    	\cventry
+	{ Developed campaign management platform }
+	{ Outreach }
+	{        {Campaign Management Platform } 
+    }
+	{}
+	{}
+	
+	\vspace{-5mm}
+    	\cventry
+	{ Developed credit risk analysis model }
+	{ Credit Risk Analysis }
+	{        {Credit Risk Analysis, BFS } 
+    }
+	{}
+	{}
+	
+	\vspace{-5mm}
+    \end{cventries}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	    \cventry
+	{5{-}year Integrated Postgraduate (B. Tech + M. Tech)  in Information Technology  }
+	{ Indian Institute of Information Technology and Management }
+	{ Gwalior  }
+	{ July 2008 -   June 2013 }
+	{}
+    \end{cventries}
+
+\vspace{-2mm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		        Programming Languages:  & {\skill{ Java, Python, SQL, Scala}}\\
+                Cloud Platforms:  & {\skill{ Amazon Web Services, Microsoft Azure, Google Cloud Platform}}\\
+                Hadoop Ecosystem:  & {\skill{ Apache Kafka, HDFS, Spark SQL, Hive, Spark Streaming, HBase, Cassandra}}\\
+                NoSQL Databases:  & {\skill{ MongoDB, Elasticsearch, Cassandra, Cosmos DB, HBase, BigQuery}}\\
+                Streaming Analytics:  & {\skill{ Apache Kafka, Flink}}\\
+                Orchestration:  & {\skill{ Jenkins, Airflow, Helm}}\\
+                Data Modeling:  & {\skill{ Staging, Curation, Semantic Layer Design}}\\
+                Data Governance:  & {\skill{ Collibra, Alation}}\\
+                Reconciliation:  & {\skill{ Fluid, Autorek}}\\
+                Change Data Capture (CDC):  & {\skill{ Qlik Replicate, Debezium}}\\
+                Data Integration:  & {\skill{ Apache Nifi, Talend, Informatica}}\\
+                Data Visualization:  & {\skill{ Tableau, Power BI}}\\
+                Core Banking:  & {\skill{ Though Machine}}\\
+        		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-7mm}
+
+
+%==== Awards ====%
+\cvsection{Awards}
+\begin{cvhonors}
+    	\cvhonor
+	{Silver Globe Award}
+	{Awarded for automating data pipelines, reducing computing time by 23\% and manual effort by 67\%}
+	{WNS Global Services}
+	{May 2019}
+    	\cvhonor
+	{COO Out{-}performance Award}
+	{Awarded for adding Big Data Capability and automating email classification, reducing response time by 67\%}
+	{WNS Global Services}
+	{April 2016}
+    	\cvhonor
+	{Wincubate II – CEO Entrepreneurship Challenge}
+	{Won for B{-}Plan SocioSEER}
+	{WNS Global Services}
+	{August 2013 {-} April 2015}
+    \end{cvhonors}
+
+\
+\end{document}
